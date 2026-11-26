@@ -255,10 +255,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const submitButton = form.querySelector('button[type="submit"]');
       const data = new FormData(form);
-      data.set(
-        "_subject",
-        `New Inspection Request — ${propTypes.join(", ")} — ${data.get("cityZip") || ""}`,
-      );
+      // data.set(
+      //   "_subject",
+      //   `New Inspection Request — ${propTypes.join(", ")} — ${data.get("cityZip") || ""}`,
+      // );
 
       // Combines the "Other" checkbox + its text field into one readable value
       // so the email table doesn't get two confusing columns

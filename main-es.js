@@ -261,10 +261,10 @@ if (form) {
     const data = new FormData(form);
 
     // Dynamic Spanish email subject
-    data.set(
-      "_subject",
-      `Nueva solicitud de inspección — ${propTypes.join(", ")} — ${data.get("cityZip") || ""}`,
-    );
+    // data.set(
+    //   "_subject",
+    //   `Nueva solicitud de inspección — ${propTypes.join(", ")} — ${data.get("cityZip") || ""}`,
+    // );
 
     // Combine property types into one readable email field
     data.set("propertyType", propTypes.join(", "));
